@@ -1,0 +1,33 @@
+local username = tostring(game.Players.LocalPlayer.Name)
+local userid = tostring(game.Players.LocalPlayer.UserId)
+
+local statusdb = "https://pastebin.com/raw/PXhBw9UB" -- when u want to make it disabled change it to not working
+local wlstatus = tostring(game:HttpGet(statusdb))
+
+local whitelisteduserlist = {
+    "Cwxsms"
+}
+
+local whitelisteduseridlist = {
+    1216837277
+}
+if wlstatus == "working" then
+    
+if table.find(whitelisteduserlist, username) then
+
+    if table.find(whitelisteduseridlist, userid) then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/UtkuOnDuty/asddsadas/main/gud", true))()
+        else
+            game.Players.LocalPlayer:Kick("Your Not Whitelisted")  
+    end
+
+else
+    game.Players.LocalPlayer:Kick("Your Not Whitelisted")
+end
+
+
+else 
+
+    game.Players.LocalPlayer:Kick("Script Is Down")
+
+end
