@@ -23,7 +23,7 @@ getgenv().SilentAim = {
    FOVRep = true,
    TeamCheck = false,
    VisibleCheck = false,
-   FOV = 100,
+   FOV = 30,
    HitChance = 100,
 }
 
